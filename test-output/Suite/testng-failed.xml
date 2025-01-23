@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="chrome"/>
+  <test name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="TestngPack.validWorkflow">
+        <methods>
+          <include name="setup"/>
+          <include name="workflow"/>
+        </methods>
+      </class> <!-- TestngPack.validWorkflow -->
+      <class name="TestngPack.CreateIssue">
+        <methods>
+          <include name="LocateIssue"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestngPack.CreateIssue -->
+      <class name="TestngPack.InvalidWorkflow">
+        <methods>
+          <include name="invalidWorkflow"/>
+          <include name="setup"/>
+          <include name="ViewIssues"/>
+        </methods>
+      </class> <!-- TestngPack.InvalidWorkflow -->
+      <class name="TestngPack.LinkAssociate">
+        <methods>
+          <include name="LinkedCards"/>
+          <include name="LocateMenuIssue"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestngPack.LinkAssociate -->
+      <class name="TestngPack.Modifyanissue">
+        <methods>
+          <include name="modify"/>
+          <include name="setup"/>
+          <include name="LocateMenuIssue"/>
+        </methods>
+      </class> <!-- TestngPack.Modifyanissue -->
+      <class name="TestngPack.viewIssue">
+        <methods>
+          <include name="ViewIssues"/>
+          <include name="Header"/>
+          <include name="sortIssue"/>
+          <include name="Inissue"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestngPack.viewIssue -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
